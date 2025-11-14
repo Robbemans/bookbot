@@ -21,5 +21,22 @@ def count_characters():
             characters[character] += 1
     return characters
 
+def sort_on(characters):
+    return characters["num"]
+
+def sort_dict():
+    characters = count_characters()
+    info_list = []
+    for character in count_characters():
+        info = {
+            "char": character,
+            "num": characters[character],
+        }
+        info_list.append(info)
+    info_list.sort(reverse=True, key=sort_on)
+    return info_list
+
+
+
     
 
