@@ -22,5 +22,6 @@ def main():
         else:
             pass
     print("============= END ===============")
+    print("Kelvin is een beetje battie")
     
 main()
